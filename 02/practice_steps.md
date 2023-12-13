@@ -27,5 +27,22 @@ The `server.Dockerfile` demonstrates another Dockerfile for creating a server im
 ## Practice Steps:
 
 1. **Build the Docker image using the Dockerfile:**
-   ```bash
-   docker build -t my-docker-image -f Dockerfile .
+
+```bash
+docker build -t my-docker-image -f Dockerfile .
+```
+
+2. **Run the Docker container using the built image:**
+
+```bash
+docker run my-docker-image
+```
+This will execute the entrypoint script and display the greeting message with the current date and time.
+
+3. **Explore the server Dockerfile (server.Dockerfile):**
+
+```bash
+docker build -t my-server-image -f server.Dockerfile .
+docker run my-server-image
+```
+This will build and run a Docker image with a simple server.
